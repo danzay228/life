@@ -78,4 +78,5 @@ class FrameGenerator:
             self.resource_distribution = calculate_resources(self.frame)
             self.frame = new_frame(self.frame, self.resource_distribution)
             self.count-=1
+        print("looped")
         return self.frame
