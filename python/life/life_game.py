@@ -3,9 +3,9 @@ import json
 import life
 
 
-def loop(init_frame, timeout=0.1):
+def loop(init_frame, timeout=0.2):
     # for frame in life.FrameGenerator(init_frame):
-    for frame in life.frame_generator(init_frame):
+    for frame in life.frame_generator(init_frame, buffered_frames_size=2):
         life.render(frame)
         time.sleep(timeout)
 
