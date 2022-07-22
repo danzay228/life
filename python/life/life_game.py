@@ -12,7 +12,7 @@ def loop(init_frame, timeout=0.2):
 
 
 def main():
-    images = json.load(open("/home/dz/Documents/Life_Game/patterns_examples.json"))
+    images = json.load(open("../../patterns_examples.json"))
     example = images["Oscillators"]["Penta-decathlon"]
     # example = images["Oscillators"]["Pulsar"]
     # example = images["Spaceships"]["Glider"]
